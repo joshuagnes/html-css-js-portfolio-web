@@ -6,6 +6,10 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<meta
+			name="description"
+			content="Shu Yu Wang (Joshua)'s personal portfolio. Software development projects, skills, and contact info."
+		/>
 		<title>My Portfolio</title>
 		<link
 			rel="stylesheet"
@@ -55,14 +59,15 @@
 				Shu Yu Wang
 			</div>
 			<div class="hamburger-menu">
-				<div
+				<button
 					class="hamburger-icon"
 					onclick="toggleMenu()"
+					aria-label="Toggle menu"
 				>
 					<span></span>
 					<span></span>
 					<span></span>
-				</div>
+				</button>
 				<div class="menu-links">
 					<li>
 						<a
@@ -95,88 +100,237 @@
 				</div>
 			</div>
 		</nav>
-		<section id="profile">
-			<div
-				class="section__pic-container"
-			>
-				<img
-					class="profile-pic"
-					src="./assets/profile-pic.png"
-					alt="JW profile picture"
-				/>
-			</div>
-			<div class="section__text">
-				<p
-					class="section__text__p1"
-				>
-					Hello, I'm
-				</p>
-				<h1 class="title">
-					Shu Yu Wang
-				</h1>
-				<p
-					class="section__text__p2"
-				>
-					Web Application
-					Developer
-				</p>
-				<div
-					class="btn-container"
-				>
-					<button
-						class="btn btn-color-2"
-						onclick="window.open('./assets/Resume_ShuYu_2024.pdf')"
-					>
-						Download CV
-					</button>
-					<button
-						class="btn btn-color-1"
-						onclick="location.href='./#contact'"
-					>
-						Contact Info
-					</button>
-				</div>
-				<div
-					id="socials-container"
-				>
-					<img
-						src="./assets/linkedin.png"
-						alt="My Linkedin profile"
-						class="icon"
-						onclick="location.href='https://www.linkedin.com/in/shuyw/'"
-					/>
-					<img
-						src="./assets/github.png"
-						alt="My Github profile"
-						class="icon"
-						onclick="location.href='https://github.com/joshuagnes'"
-					/>
-				</div>
-			</div>
-		</section>
-		<section id="about">
-			<p
-				class="section__text__p1"
-			>
-				Get to Know More
-			</p>
-			<h1 class="title">
-				About Me
-			</h1>
-			<div
-				class="section-container"
-			>
+
+		<main>
+			<section id="profile">
 				<div
 					class="section__pic-container"
 				>
 					<img
-						src="./assets/about-pic.jpg"
-						alt="profile picture"
-						class="about-pic"
+						class="profile-pic"
+						src="./assets/profile-pic.png"
+						alt="Profile picture of Shu Yu Wang"
 					/>
 				</div>
 				<div
-					class="about-details-container"
+					class="section__text"
+				>
+					<p
+						class="section__text__p1"
+					>
+						Hello, I'm
+					</p>
+					<h1 class="title">
+						Shu Yu Wang
+					</h1>
+					<p
+						class="section__text__p2"
+					>
+						Web Application
+						Developer
+					</p>
+					<div
+						class="btn-container"
+					>
+						<button
+							class="btn btn-color-2"
+							onclick="window.open('./assets/Resume_ShuYu_2025.pdf')"
+						>
+							Download CV
+						</button>
+						<button
+							class="btn btn-color-1"
+							onclick="location.href='./#contact'"
+						>
+							Contact Info
+						</button>
+					</div>
+					<div
+						id="socials-container"
+					>
+						<img
+							src="./assets/linkedin.png"
+							alt="LinkedIn profile icon"
+							class="icon"
+							onclick="location.href='https://www.linkedin.com/in/shuyw/'"
+						/>
+						<img
+							src="./assets/github.png"
+							alt="GitHub profile icon"
+							class="icon"
+							onclick="location.href='https://github.com/joshuagnes'"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<section id="about">
+				<p
+					class="section__text__p1"
+				>
+					Get to Know More
+				</p>
+				<h1 class="title">
+					About Me
+				</h1>
+				<div
+					class="section-container"
+				>
+					<div
+						class="section__pic-container"
+					>
+						<img
+							src="./assets/about-pic.jpg"
+							alt="About me profile"
+							class="about-pic"
+						/>
+					</div>
+					<div
+						class="about-details-container"
+					>
+						<div
+							class="about-containers"
+						>
+							<div
+								class="details-container"
+							>
+								<img
+									src="./assets/experience.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<h3>
+									Experience
+								</h3>
+								<p>
+									2
+									years
+									<br />Software
+									Development
+								</p>
+							</div>
+							<div
+								class="details-container"
+							>
+								<img
+									src="./assets/education.png"
+									alt="Education icon"
+									class="icon"
+								/>
+								<h3>
+									Education
+								</h3>
+								<p>
+									BA
+									Bachelor's
+									Degree<br />BAS
+									Bachelor's
+									Degree
+									(Expected
+									2027)
+								</p>
+							</div>
+						</div>
+						<div
+							class="text-container"
+						>
+							<p>
+								Hello,
+								I'm
+								Shuyu —
+								you can
+								also
+								call me
+								Joshua.
+								I am a
+								passionate
+								and
+								driven
+								sophomore
+								studying
+								software
+								development,
+								with a
+								focus on
+								web
+								application
+								design.
+								My
+								journey
+								began
+								uniquely,
+								combining
+								culinary
+								arts
+								with
+								technology,
+								giving
+								me a
+								diverse
+								skill
+								set and
+								a
+								creative
+								approach
+								to
+								problem-solving.
+							</p>
+							<p>
+								I am
+								actively
+								seeking
+								opportunities
+								to apply
+								my
+								skills
+								and make
+								a
+								tangible
+								impact
+								in the
+								tech
+								industry.
+								I’m open
+								to
+								internships
+								and
+								full-time
+								roles,
+								particularly
+								those
+								where I
+								can
+								contribute
+								to
+								meaningful
+								projects
+								and grow
+								as a web
+								developer.
+							</p>
+						</div>
+					</div>
+				</div>
+				<img
+					src="./assets/arrow.png"
+					alt="Down arrow icon"
+					class="icon arrow"
+					onclick="location.href='./#skills'"
+				/>
+			</section>
+
+			<section id="skills">
+				<p
+					class="section__text__p1"
+				>
+					Explore My
+				</p>
+				<h1 class="title">
+					Skills
+				</h1>
+
+				<div
+					class="experience-details-container"
 				>
 					<div
 						class="about-containers"
@@ -184,396 +338,336 @@
 						<div
 							class="details-container"
 						>
-							<img
-								src="./assets/experience.png"
-								alt="Experience icon"
-								class="icon"
-							/>
-							<h3>
-								Experience
-							</h3>
-							<p>
-								2 years
-								<br />Software
-								Development
-							</p>
-						</div>
-						<div
-							class="details-container"
-						>
-							<img
-								src="./assets/education.png"
-								alt="Education icon"
-								class="icon"
-							/>
-							<h3>
-								Education
-							</h3>
-							<p>
-								BA
-								Bachelors
-								Degree<br />BAS
-								Bachelors
-								Degree
-								(Expected
-								2027)
-							</p>
-						</div>
-					</div>
-					<div
-						class="text-container"
-					>
-						<p>
-							Hello this
-							is Shuyu,
-							you can call
-							me Joshua, I
-							am a
-							passionate
-							and driven
-							software
-							development
-							sophomore
-							with a focus
-							on Web
-							Application.
-							My journey
-							began with a
-							unique blend
-							of culinary
-							arts and
-							tech, which
-							has equipped
-							me with a
-							diverse
-							skill set
-							and a
-							creative
-							approach to
-							problem-solving.
-						</p>
-						<br />
-						<p>
-							I am
-							actively
-							seeking
-							opportunities
-							to leverage
-							my skills
-							and make a
-							tangible
-							impact in
-							the tech
-							industry.
-							Open to
-							internships
-							and
-							full-time
-							roles, I am
-							especially
-							interested
-							in positions
-							where I can
-							contribute
-							to
-							meaningful
-							projects and
-							continue my
-							growth as a
-							Web
-							developer.
-						</p>
-					</div>
-				</div>
-			</div>
-			<img
-				src="./assets/arrow.png"
-				alt="arrow icon"
-				class="icon arrow"
-				onclick="location.href='./#skills'"
-			/>
-		</section>
-		<section id="skills">
-			<p
-				class="section__text__p1"
-			>
-				Explore My
-			</p>
-			<h1 class="title">
-				Skills
-			</h1>
-			<div
-				class="experience-details-container"
-			>
-				<div
-					class="about-containers"
-				>
-					<div
-						class="details-container"
-					>
-						<h2
-							class="experience-sub-title"
-						>
-							Software
-							Development
-						</h2>
-						<div
-							class="article-container"
-						>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-								/>
-								<div>
+							<h2
+								class="experience-sub-title"
+							>
+								Languages
+							</h2>
+							<div
+								class="article-container"
+							>
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
 									<h3>
 										HTML5
 									</h3>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-								/>
-								<div>
+								</article>
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
 									<h3>
 										CSS
 									</h3>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-								/>
-								<div>
+								</article>
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
 									<h3>
 										JavaScript
 									</h3>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-								/>
-								<div>
+								</article>
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
 									<h3>
 										Python
 									</h3>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-								/>
-								<div>
+								</article>
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
 									<h3>
-										React
+										SQL
 									</h3>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-								/>
-								<div>
+								</article>
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
 									<h3>
 										C#
 									</h3>
-								</div>
-							</article>
+								</article>
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
+									<h3>
+										TypeScript
+									</h3>
+								</article>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<img
-				src="./assets/arrow.png"
-				alt="arrow icon"
-				class="icon arrow"
-				onclick="location.href='./#projects'"
-			/>
-		</section>
-		<section id="projects">
-			<p
-				class="section__text__p1"
-			>
-				Browse My Recent
-			</p>
-			<h1 class="title">
-				Projects
-			</h1>
-			<div
-				class="experience-details-container"
-			>
-				<div
-					class="about-containers"
-				>
-					<div
-						class="details-container color-container"
-					>
-						<div
-							class="article-container"
-						>
-							<img
-								src="./assets/project-1.jpg"
-								alt="Project 1"
-								class="project-img"
-							/>
-						</div>
-						<h2
-							class="experience-sub-title project-title"
-						>
-							Project One
-							- I Spy Game
-						</h2>
-						<div
-							class="btn-container"
-						>
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="window.open('https://github.com/joshuagnes/dev109/tree/main/ispy', '_blank')"
-							>
-								Github
-							</button>
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="window.open('https://joshuagnes.github.io/dev109/ispy/index.html', '_blank')"
-							>
-								Link
-							</button>
-						</div>
-					</div>
-					<div
-						class="details-container color-container"
-					>
-						<div
-							class="article-container"
-						>
-							<img
-								src="./assets/project-2.png"
-								alt="Project 2"
-								class="project-img"
-							/>
-						</div>
-						<h2
-							class="experience-sub-title project-title"
-						>
-							Project Two
-							- Digital
-							Clock
-						</h2>
-						<div
-							class="btn-container"
-						>
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="window.open('https://github.com/joshuagnes/digital-clock-react', '_blank')"
-							>
-								Github
-							</button>
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="window.open('https://joshuagnes.github.io/digital-clock-react/', '_blank')"
-							>
-								Link
-							</button>
-						</div>
-					</div>
-					<div
-						class="details-container color-container"
-					>
-						<div
-							class="article-container"
-						>
-							<img
-								src="./assets/project-3.png"
-								alt="Project 3"
-								class="project-img"
-							/>
-						</div>
-						<h2
-							class="experience-sub-title project-title"
-						>
-							Project
-							Three -
-							Stock MA
-							Tracker
-						</h2>
-						<div
-							class="btn-container"
-						>
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="window.open('https://github.com/joshuagnes/stock_ma_tracker/blob/main/README.md', '_blank')"
-							>
-								Github
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<img
-				src="./assets/arrow.png"
-				alt="arrow icon"
-				class="icon arrow"
-				onclick="location.href='./#contact'"
-			/>
-		</section>
-		<section id="contact">
-			<p
-				class="section__text__p1"
-			>
-				Get in Touch
-			</p>
-			<h1 class="title">
-				Contact Me
-			</h1>
-			<div
-				class="contact-info-upper-container"
-			>
-				<div
-					class="contact-info-container"
-				>
-					<img
-						src="./assets/email.png"
-						alt="email icon"
-						class="icon contact-icon email-icon"
-					/>
-					<p>
-						<a
-							href="mailto:shuyu.wang@bellevuecollege.edu"
-							>shuyu.wang@bellevuecollege.edu</a
-						>
-					</p>
 				</div>
 				<div
-					class="contact-info-container"
+					class="experience-details-container"
 				>
-					<img
-						src="./assets/linkedin.png"
-						alt="linkedin icon"
-						class="icon contact-icon"
-					/>
-					<p>
-						<a
-							href="https://www.linkedin.com/in/shuyw/"
-							target="_blank"
-							>Linkedin</a
+					<div
+						class="about-containers"
+					>
+						<div
+							class="details-container"
 						>
-					</p>
+							<h2
+								class="experience-sub-title"
+							>
+								Frameworks
+							</h2>
+							<div
+								class="article-container"
+							>
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
+									<h3>
+										React(incl.
+										React
+										9)
+									</h3>
+								</article>
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
+									<h3>
+										React
+										Native
+									</h3>
+								</article>
+
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
+									<h3>
+										Vite
+									</h3>
+								</article>
+								<article>
+									<img
+										src="./assets/checkmark.png"
+										alt="Check icon"
+										class="icon"
+									/>
+									<h3>
+										Expo
+									</h3>
+								</article>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</section>
+				<img
+					src="./assets/arrow.png"
+					alt="Down arrow icon"
+					class="icon arrow"
+					onclick="location.href='./#projects'"
+				/>
+			</section>
+
+			<section id="projects">
+				<p
+					class="section__text__p1"
+				>
+					Browse My Recent
+				</p>
+				<h1 class="title">
+					Projects
+				</h1>
+				<div
+					class="experience-details-container"
+				>
+					<div
+						class="about-containers"
+					>
+						<div
+							class="details-container color-container"
+						>
+							<div
+								class="article-container"
+							>
+								<img
+									src="./assets/project-1.png"
+									alt="Recipe App"
+									class="project-img"
+								/>
+							</div>
+							<h2
+								class="experience-sub-title project-title"
+							>
+								Project
+								One -
+								Recipe
+								App
+							</h2>
+							<div
+								class="btn-container"
+							>
+								<button
+									class="btn btn-color-2 project-btn"
+									onclick="window.open('https://github.com/joshuagnes/dev272/tree/6ffe12ca5ce95781eb063c9e7fc36ad0ce2c6770/recipe-app', '_blank')"
+								>
+									Github
+								</button>
+							</div>
+						</div>
+
+						<div
+							class="details-container color-container"
+						>
+							<div
+								class="article-container"
+							>
+								<img
+									src="./assets/project-2.png"
+									alt="project img"
+									class="project-img"
+								/>
+							</div>
+							<h2
+								class="experience-sub-title project-title"
+							>
+								Project
+								Two -
+								Travel
+								Itinerary
+								Planner
+							</h2>
+							<div
+								class="btn-container"
+							>
+								<button
+									class="btn btn-color-2 project-btn"
+									onclick="window.open('https://github.com/joshuagnes/travel-itinerary-planner.git', '_blank')"
+								>
+									Github
+								</button>
+							</div>
+						</div>
+
+						<div
+							class="details-container color-container"
+						>
+							<div
+								class="article-container"
+							>
+								<img
+									src="./assets/project-3.png"
+									alt="Stock MA Tracker project"
+									class="project-img"
+								/>
+							</div>
+							<h2
+								class="experience-sub-title project-title"
+							>
+								Project
+								Three -
+								Memory
+								Card
+								Game
+							</h2>
+							<div
+								class="btn-container"
+							>
+								<button
+									class="btn btn-color-2 project-btn"
+									onclick="window.open('https://github.com/joshuagnes/memory-card-game-react.git', '_blank')"
+								>
+									Github
+								</button>
+								<button
+									class="btn btn-color-2 project-btn"
+									onclick="window.open('https://joshuagnes.github.io/memory-card-game/', '_blank')"
+								>
+									Link
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img
+					src="./assets/arrow.png"
+					alt="Down arrow icon"
+					class="icon arrow"
+					onclick="location.href='./#contact'"
+				/>
+			</section>
+
+			<section id="contact">
+				<p
+					class="section__text__p1"
+				>
+					Get in Touch
+				</p>
+				<h1 class="title">
+					Contact Me
+				</h1>
+				<div
+					class="contact-info-upper-container"
+				>
+					<div
+						class="contact-info-container"
+					>
+						<img
+							src="./assets/email.png"
+							alt="Email icon"
+							class="icon contact-icon email-icon"
+						/>
+						<p>
+							<a
+								href="mailto:shuyu.wang@bellevuecollege.edu"
+								>shuyu.wang@bellevuecollege.edu</a
+							>
+						</p>
+					</div>
+					<div
+						class="contact-info-container"
+					>
+						<img
+							src="./assets/linkedin.png"
+							alt="LinkedIn icon"
+							class="icon contact-icon"
+						/>
+						<p>
+							<a
+								href="https://www.linkedin.com/in/shuyw/"
+								target="_blank"
+								>LinkedIn</a
+							>
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
 		<footer>
 			<nav>
 				<div
@@ -610,11 +704,11 @@
 				</div>
 			</nav>
 			<p>
-				Copyright &#169; 2023
-				Joshua Wang. All Rights
-				Reserved.
+				&copy; 2023 Joshua Wang.
+				All Rights Reserved.
 			</p>
 		</footer>
+
 		<script src="script.js"></script>
 	</body>
 </html>
